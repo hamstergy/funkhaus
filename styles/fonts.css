@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'RM Neue';
+    src: url('~static/fonts/RMNeue-Regular.woff2') format('woff2'),
+    url('~static/fonts/RMNeue-Regular.woff') format('woff'),
+    url('~static/fonts/RMNeue-Italic.woff2') format('woff2'),
+    url('~static/fonts/RMNeue-Italic.woff') format('woff');
+    font-style: normal;
+}
