@@ -11,8 +11,8 @@
     name: "Slider",
     data() {
       return {
-        timer: null,
-        currentIndex: 0
+        currentIndex: 0,
+        height: 0
       }
     },
     props: {
@@ -21,19 +21,19 @@
         default: []
       }
     },
-    mounted: function() {
+    mounted() {
       this.startSlide();
     },
     methods: {
-      startSlide: function() {
-        this.timer = setInterval(this.next, 3000);
+      startSlide() {
+        setInterval(this.next, 3000);
       },
-      next: function() {
+      next() {
         this.currentIndex += 1;
       }
     },
     computed: {
-      currentImg: function() {
+      currentImg() {
         return this.images[Math.abs(this.currentIndex) % this.images.length];
       }
     }

@@ -61,6 +61,8 @@
     -moz-transition: all .3s linear;
     -webkit-transition: all .3s linear;
     transition: all .3s linear;
+    -webkit-transform: translate(0, 10);
+    transform: translate(0, 10px);
 
     &--active {
       -moz-transform:rotate(-45deg);

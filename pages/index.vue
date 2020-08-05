@@ -2,7 +2,7 @@
   <div>
     <header-app />
     <transition name="fade">
-      <slider :images="sliderArray" v-if="hover && windowWidth > 600"/>
+      <slider :images="sliderArray" v-if="hover && windowWidth > 768"/>
     </transition>
     <div class="editor">
       <p
@@ -43,7 +43,7 @@ export default {
     return {
       title: this.siteMeta.title + ' - ' + this.page.title,
       meta: [
-        {hid: 'description', name: 'description', content: this.description}
+        {hid: 'description', name: 'description', content: this.siteMeta.description}
       ],
     }
   },
