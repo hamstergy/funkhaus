@@ -2,14 +2,14 @@
   <div>
     <header-app />
     <transition name="fade">
-      <slider :images="sliderArray" v-if="hover && windowWidth > 768"/>
+      <slider :images="sliderArray" v-if="hover && windowWidth > 600"/>
     </transition>
     <div class="editor">
-      <p
+      <h2
           class="editor__item"
           v-for="editor in editors"
           @mouseover="currentEditorImage=editor.featuredImage; hover=true"
-          @mouseleave="hover = false">{{editor.title}}</p>
+          @mouseleave="hover = false">{{editor.title}}</h2>
     </div>
   </div>
 </template>
@@ -78,6 +78,9 @@ export default {
   font: 24px/37px 'RM Neue';
   color: #FDC760;
   position: relative;
+  display: block;
+  margin: 0;
+  font-weight: normal;
   @media only screen and (max-width: 768px) {
     column-count: 2;
   }

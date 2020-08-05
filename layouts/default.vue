@@ -17,6 +17,14 @@ html {
   max-width: 1280px;
   margin: 0 auto;
 }
+h2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
 
 *,
 *::before,

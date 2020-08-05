@@ -49,6 +49,7 @@
     -moz-transition: all .3s linear;
     -webkit-transition: all .3s linear;
     transition: all .3s linear;
+    transform: translate(0, 0);
 
     &--active {
       -moz-transform:rotate(45deg);
